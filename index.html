@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- header -->
+
+
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-bold"><b>HE MEN'S</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/">Web Browser</a></li>
+                            <li><a class="dropdown-item" href="/">Dark Web</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+
+                <div class="mx-1">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">SingUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--  Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content bg-light">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel"><b>Login to HE MAN'S</b></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-light">
+                    <div class="mb-3">
+                        <label for="loginFormControlInput1" class="form-label"><b>Email ID</b></label>
+                        <input type="email" class="form-control" id="loginFormControlInput1"
+                            placeholder="Enter the email id">
+                    </div>
+                    <div class="mb-3">
+                        <label for="loginFormControlInput2" class="form-label"><b>Password</b></label>
+                        <input type="password" class="form-control" id="loginFormControlInput2"
+                            placeholder="Enter the password">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--  Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-light">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModalLabel"><b>Get an HE MEN'S Account</b></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-light">
+                    <div class="mb-3">
+                        <label for="signupFormControlInput1" class="form-label"><b>Email ID</b></label>
+                        <input type="email" class="form-control" id="signupFormControlInput1"
+                            placeholder="Enter the email id">
+                    </div>
+                    <div class="mb-3">
+                        <label for="signupFormControlInput2" class="form-label"><b>Password</b></label>
+                        <input type="password" class="form-control" id="signupFormControlInput2"
+                            placeholder="Enter the password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="signipFormControlInput3" class="form-label"><b>Conform Password</b></label>
+                        <input type="password" class="form-control" id="signupFormControlInput3"
+                            placeholder="Enter the Re-password">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Create Account </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider -->
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.ijlwebsolutions.com/wp-content/uploads/2016/02/laptop-slider.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Premium Laptop</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    <button type="button" class="btn btn-primary">Add</button>
+                    <button type="button" class="btn btn-danger">summary</button>
+                    <button type="button" class="btn btn-info">select</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.ijlwebsolutions.com/wp-content/uploads/2016/02/laptop-slider.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Excelive Shirt</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                    <button type="button" class="btn btn-primary">Add</button>
+                    <button type="button" class="btn btn-danger">summary</button>
+                    <button type="button" class="btn btn-info">select</button>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.ijlwebsolutions.com/wp-content/uploads/2016/02/laptop-slider.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                    <button type="button" class="btn btn-primary">Add</button>
+                    <button type="button" class="btn btn-danger">summary</button>
+                    <button type="button" class="btn btn-info">select</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- item -->
+
+    <div class="container my-5 px-5">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-danger">BRAND</strong>
+                        <h2 class="mb-0"><b>KALI LINUX</b></h2>
+                        <div class="mb-1 text-body-secondary">13 MARCH 2013</div>
+                        <p class="card-text mb-auto">Kali Linux has approximately 600 penetration-testing programs
+                            (tools), including Armitage (a graphical cyber attack management tool)</p>
+                        <a href="https://en.wikipedia.org/wiki/Kali_Linux#:~:text=The%20first%20version%2C%201.0.,a%20GNOME%20version%20still%20available." class="icon-link gap-1 icon-link-hover stretched-link">
+                            Read More
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+
+
+                        </a>
+                    </div>
+
+
+                    <div class="col-auto d-none d-lg-block">
+
+                        <img class="bd-placeholder-img" width="200" height="250"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUJff3D-MzT2pMGqUm2Isitzw3SkG95k25p1SZVbK5ZMGvN8G7KP5Ftr3JJCg0LiJG4KU&usqp=CAU">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-danger">BRAND</strong>
+                        <h2 class="mb-0"><b>LAPTOP</b></h2>
+                        <div class="mb-1 text-body-secondary">20 February 1991</div>
+                        <p class="mb-auto">Developed by Adam Osborne in April 1981, the Osborne I was the first truly portable computer.which was much lighter</p>
+                        <a href="https://www.computerhope.com/history/laptop.htm#:~:text=Developed%20by%20Adam%20Osborne%20in,with%20a%20built%2Din%20printer." class="icon-link gap-1 icon-link-hover stretched-link">
+                            Read More
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250"
+                            src="data:image/jpeg;base64,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">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-danger">BRAND</strong>
+                        <h2 class="mb-0"><b>PYTHON</b></h2>
+                        <div class="mb-1 text-body-secondary">Nov 12</div>
+                        <p class="card-text mb-auto">Python was created by Guido van Rossum, and first released on February 20, 1991. While you may know the python as a large snake</p>
+                        <a href="https://pythoninstitute.org/about-python#:~:text=Python%20was%20created%20by%20Guido,called%20Monty%20Python's%20Flying%20Circus." class="icon-link gap-1 icon-link-hover stretched-link">
+                            Read More
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+
+
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+
+                        <img class="bd-placeholder-img" width="200" height="250"
+                            src="https://s40424.pcdn.co/in/wp-content/uploads/2022/06/why-learn-python-1.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-danger">BEAND</strong>
+                        <h2 class="mb-0"><b>JAVA SCRIPT</b></h2>
+                        <div class="mb-1 text-body-secondary">Nov 11</div>
+                        <p class="mb-auto">JavaScript often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web</p>
+                        <a href="https://en.wikipedia.org/wiki/JavaScript" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Read More
+                            <svg class="bi">
+                                <use xlink:href="#chevron-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250"
+                            src="https://images.squarespace-cdn.com/content/v1/555b7fd5e4b0c7c58cfd6cf4/1432743943879-STUKXEP03HJOS33KTFSK/image-asset.jpeg?format=1500w">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <footer class="container">
+        <p class="float-end"><a href="#">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Go to the top</font>
+                </font>
+            </a></p>
+        <p>
+
+
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">© 2023–2027 Company, Inc.</font>
+                <font style="vertical-align: inherit;">· </font>
+            </font><a href="#">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;"></font>Privacy Policy&nbsp;&nbsp
+                </font>
+                </font>
+            </a>
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;"> · </font>
+            </font><a href="#">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Terms of Use</font>
+                </font>
+            </a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
